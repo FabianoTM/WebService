@@ -6,7 +6,7 @@ public class PublicaServico {
 
 	@SuppressWarnings("unused")
 	public static void main(String[] args) {
-		String address = "http://localhost:8082/hello";
+		String address = "http://localhost:8080/hello";
 		System.out.println("Publicando webservice em: " + address);
 		System.out.println("WSDL: " + address + "?wsdl");
 		HelloWeb servico = new HelloWeb();
