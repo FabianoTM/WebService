@@ -1,0 +1,8 @@
+1- Compilar classe HelloWeb.java:
+PATH/.../src> javac br/com/ftm/exemplo/ws/*.java
+
+2- Gerar WebService usando wsgen:
+PATH/.../src> wsgen -s . -classpath . br.com.ftm.exemplo.ws.HelloWeb
+
+3- Gerar client usando wsimport:
+PATH/.../src> wsimport -keep -p br.com.ftm.exemplo.ws.client http://localhost:8082/hello?wsdl
